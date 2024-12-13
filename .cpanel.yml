@@ -1,5 +1,7 @@
 ---
 deployment:
   tasks:
+    # Define the directory where files will be copied
     - export DEPLOYPATH=/home/brezitsk/public_html
-    - /bin/cp * $DEPLOYPATH
+    # Copy files from the repository to the public_html folder
+    - /bin/cp -r * $DEPLOYPATH
