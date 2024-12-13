@@ -4,4 +4,5 @@ deployment:
     # Define the directory where files will be copied
     - export DEPLOYPATH=/home/brezitsk/public_html
     # Copy files from the repository to the public_html folder
-    - /bin/cp -r * $DEPLOYPATH
+    - /bin/cp index.html $DEPLOYPATH
+    - /bin/cp -R js $DEPLOYPATH
